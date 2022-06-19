@@ -7,6 +7,14 @@ mikOS
 June 2022
 '''
 
+'''
+# bilješke:
+registrirati kako da se klikom na ikonu zvučnika, nakon pojave volume slider-a, može destroy-ati  taj Label sa sliderom nakon ponovnog klika na zvučnik 
+ili bilo gdje na root prozoru.
+'''
+
+
+
 from tkinter import*    
 from time import strftime
 import datetime as dt
