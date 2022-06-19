@@ -9,8 +9,11 @@ June 2022
 
 '''
 # bilješke:
-registrirati kako da se klikom na ikonu zvučnika, nakon pojave volume slider-a, može destroy-ati  taj Label sa sliderom nakon ponovnog klika na zvučnik 
+B1: registrirati kako da se klikom na ikonu zvučnika, nakon pojave volume slider-a, može destroy-ati  taj Label sa sliderom nakon ponovnog klika na zvučnik 
 ili bilo gdje na root prozoru.
+
+B2: nadodati buttone za sleep i shutdown (sleep = samo crna slika; shutdown = root.destroy())
+
 '''
 
 
