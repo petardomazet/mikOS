@@ -102,18 +102,12 @@ def sleep_mode():
 #  - - - - -   Nadodati root.bind_all('<anykey>', dakako)
 
 def buttonSleep():
-    def dakako(event):
+    def dakako():
         sleepMode.destroy()
         root.config(cursor="arrow")
     sleepMode = Button(root, text=(""*4323), fg="black", bg="black", activebackground="black", borderwidth=0, command=dakako)
     sleepMode.place(x=-1,y=-1, height=4430, width=4343)
-    sleepMode.bind('<Return>', dakako)
     root.config(cursor="None")
-
-
-
-    
-    
 sleepBtn = Button(root, text="Spavaj", command=buttonSleep)
 sleepBtn.place(x=54, y=473)
 
