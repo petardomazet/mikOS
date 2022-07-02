@@ -6,16 +6,10 @@ mikOS
 
 June 2022
 '''
-
-try:
-    from tkinter import*
-    from time import strftime
-    import datetime as dt
-    import os
-except ImportError:
-    print("Dakako.")
-    
-#uimport os - iljesku u isprintat aza error
+from tkinter import*
+from time import strftime
+import datetime as dt
+import os
 
 
 window_dimensions = "1100x620"
@@ -106,8 +100,6 @@ def sleep_mode():
 
 """
 #  - - - - -   Nadodati root.bind_all('<anykey>', dakako)
-
-
 
 def buttonSleep():
     def dakako(event):
