@@ -1,5 +1,5 @@
 '''
-@pdmzt
+@pdmzt  &  @notjipp
 
 Simple Python Operating System
 mikOS
