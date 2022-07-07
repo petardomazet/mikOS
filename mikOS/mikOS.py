@@ -145,7 +145,7 @@ def system_information():       #System information app
     processorLabel = Label(sysInf, text=("Processor: " + processor1), fg="#F6F6FA", font=("Segoe UI", 12), bg=darkMode)
     processorLabel.place(x=45, y=189)
 
-    InstalledMemoryRAM = Label(sysInf, text=("Installed Memory (RAM): " + RamCapacityRounded + " GB"), fg="#F6F6FA", font=("Segoe UI", 12), bg=darkMode)
+    InstalledMemoryRAM = Label(sysInf, text=("Installed Memory (RAM): " + RamCapacityRounded + ",00" + " GB"), fg="#F6F6FA", font=("Segoe UI", 12), bg=darkMode)
     InstalledMemoryRAM.place(x=45, y=210)
 
     totalDiskCapacity = Label(sysInf, text=("Total Disk Capacity: " + totalDiskSpaceString + " GB"), fg="#F6F6FA", font=("Segoe UI", 12), bg=darkMode)
