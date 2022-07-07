@@ -1,51 +1,61 @@
 '''
-@pdmzt  &  @notjipp
+@pdmzt  &  @NotJipp
 Simple Python Operating System
 mikOS
-June 2022
+June 2022 // šta nije July? xd
 '''
 
-from concurrent.futures import process
-from tkinter import*
-from time import strftime
-import datetime as dt
-import psutil
-import platform
-import cpuinfo
-import shutil
+"""
 
+n/a
+
+@NotJipp
+
+"""
+
+import os
+import sys
+import psutil
+import shutil
+import cpuinfo
+import platform
+import datetime as dt
+from tkinter import *
+from time import strftime
+from concurrent.futures import process
 
 window_dimensions = "1100x620"
-os_name = "mikOS"
-mikOS_version = "1.0"
-darkMode = "#252325"
+os_name           = "mikOS"
+mikOS_version     = "mikOS 1.0"
+darkMode          = "#252325"
 
 def welcome_screen():
-    global welcomeScreen
-    global loginScreenWallpaper
-    global loginPersonIcon
-    global notificationsIcon
-    global enterIcon
     global wifiIcon
+    global enterIcon
+    global wallpaper
     global sleepIcon
     global speakerIcon
-    global wallpaper
-
+    global welcomeScreen
+    global loginPersonIcon
+    global notificationsIcon
+    global loginScreenWallpaper
+    
     welcomeScreen = Tk()
     welcomeScreen.title(os_name)
     welcomeScreen.geometry(window_dimensions)
     welcomeScreen.resizable(0,0)
     welcomeScreen.config(cursor="arrow")
-    
-    loginScreenWallpaper = PhotoImage(file="LockScreenWallpaper.png")
-    loginPersonIcon = PhotoImage(file="loginPersonIcon.png")
-    notificationsIcon = PhotoImage(file="NotificationsIcon.png")
-    enterIcon = PhotoImage(file="EnterPassword.png")
-    wifiIcon = PhotoImage(file="Wi-Fi_Icon.png")
-    #sleepIcon = PhotoImage(file="sleep-icon.png")
-    speakerIcon = PhotoImage(file="SpeakerIcon.png")
-welcome_screen()
 
+    wifiIcon             = PhotoImage(file="pictures/wifiIcon.png")
+    wallpaper            = PhotoImage(file="pictures/wallpaperOption1.png")
+    enterIcon            = PhotoImage(file="pictures/enterIcon.png")
+    speakerIcon          = PhotoImage(file="pictures/speakerIcon.png")
+    loginPersonIcon      = PhotoImage(file="pictures/loginPersonIcon.png")
+    notificationsIcon    = PhotoImage(file="pictures/notificationIcon.png")
+    loginScreenWallpaper = PhotoImage(file="pictures/wallpaperLogin.png")
+    #sleepIcon           = PhotoImage(file="sleepIcon.png") --- vidim ne postoji u folderu, preporučam mjesec mali kao iconu
+
+welcome_screen()
 
 def time():
     global c
@@ -82,13 +92,14 @@ def system_information():       #System information app
     bar.place(x=-1, y=-1, height=25)
 
 
-    loginScreenWallpaper = PhotoImage(file="LockScreenWallpaper.png")
-    loginPersonIcon = PhotoImage(file="loginPersonIcon.png")
-    notificationsIcon = PhotoImage(file="NotificationsIcon.png")
-    enterIcon = PhotoImage(file="EnterPassword.png")
-    wifiIcon = PhotoImage(file="Wi-Fi_Icon.png")
-    #sleepIcon = PhotoImage(file="sleep-icon.png")
-    speakerIcon = PhotoImage(file="SpeakerIcon.png")
+    wifiIcon             = PhotoImage(file="pictures/wifiIcon.png")
+    wallpaper            = PhotoImage(file="pictures/wallpaperOption1.png")
+    enterIcon            = PhotoImage(file="pictures/enterIcon.png")
+    speakerIcon          = PhotoImage(file="pictures/speakerIcon.png")
+    loginPersonIcon      = PhotoImage(file="pictures/loginPersonIcon.png")
+    notificationsIcon    = PhotoImage(file="pictures/notificationIcon.png")
+    loginScreenWallpaper = PhotoImage(file="pictures/wallpaperLogin.png")
+    #sleepIcon           = PhotoImage(file="sleepIcon.png") --- vidim ne postoji u folderu, preporučam mjesec mali kao iconu
     
     # Computer Specs:
     release = mikOS_version
