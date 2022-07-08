@@ -2,7 +2,7 @@
 @pdmzt  &  @NotJipp
 Simple Python Operating System
 mikOS
-June 2022 // šta nije July? xd
+June 2022 // šta nije July? xd    - aaaahahahah jesi mi pametan, evo baš se držim za glavu...
 '''
 
 """
@@ -53,7 +53,7 @@ def welcome_screen():
     loginPersonIcon      = PhotoImage(file="pictures/loginPersonIcon.png")
     notificationsIcon    = PhotoImage(file="pictures/notificationIcon.png")
     loginScreenWallpaper = PhotoImage(file="pictures/wallpaperLogin.png")
-    #sleepIcon           = PhotoImage(file="sleepIcon.png") --- vidim ne postoji u folderu, preporučam mjesec mali kao iconu
+    #sleepIcon           = PhotoImage(file="sleepIcon.png") --- vidim ne postoji u folderu, preporučam mjesec mali kao iconu          
 
 welcome_screen()
 
