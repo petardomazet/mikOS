@@ -1,5 +1,5 @@
 '''
-@pdmzt  &  @NotJipp
+@petardomazet &  @NotJipp
 Simple Python Operating System
 mikOS
 June 2022 // šta nije July? xd    - aaaahahahah jesi mi pametan, evo baš se držim za glavu...
