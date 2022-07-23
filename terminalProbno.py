@@ -53,7 +53,7 @@ def dakako():
                     HeckingInterrupted = Label(terminalApp, font=("Terminal", 10), bg="black", fg="white", borderwidth=0, text=('Hecking interrupted.'))
                     HeckingInterrupted.place(x=1, y=140)
                 else:
-                    pass #- vamo ćem nešto stait
+                    pass #- vamo ćemo nešto stavit
     
             pathKao1 = Label(terminalApp, font=("Terminal", 10), bg="black", fg="white", borderwidth=0, text=('Are you sure you want to heck (netko)? (y / n)'))
             pathKao1.place(x=1, y=60)
