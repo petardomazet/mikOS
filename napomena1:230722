@@ -1,0 +1,7 @@
+terminal je "terminalProbno.py". Kad ga dovršim do kraja, bit će implementiran u kod mikOS-a.
+
+Problem zadaje ovaj font zvan 'Terminal'; sad sam na bratovom kompu i jako loše izgleda, nekako zbijeno, pa ćemo vjerojatno to morat prominit.
+
+vamo piši ideje za terminal komande:
+*exit - gasi terminal
+*...
