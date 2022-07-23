@@ -4,6 +4,7 @@ import re
 
 """
 Popraviti ovo sranje sa ce funkcijom
+Izbrisat nepotrebne prazne linije kod petlje!!!
 
 Maknuti entryCOmmands height i width i lipo podesit da je sve u jednoj liniji
 """
@@ -16,7 +17,6 @@ terminalApp.resizable(0,0)
 terminalApp.geometry("1100x620")
 terminalApp.config(bg="black")
 terminalApp.config(cursor='left_ptr')
-
     
 bar = Label(terminalApp, text=(" " * 100000), fg=windowBarColor, bg=windowBarColor)  # crna traka na vrhu 
 bar.place(x=-1, y=-1, height=25)
@@ -37,28 +37,21 @@ def dakako():
 
         if heck in usersCommand:
             blackBg()
-
-         
+        
             def jebiSebe(event):
                 YNanswer = str(AreYouSure.get())
-
-
                 def ifAnswerIsY():
                     HeckProgress = Progressbar(terminalApp, orient='horizontal', mode='determinate', length=450)
                     HeckProgress.place(x=1, y=100) 
                     HeckProgress.start()
-                    terminalApp.after(9000, HeckProgress.destroy())
-
-                
+                    terminalApp.after(9000, HeckProgress.destroy())               
                 YNanswer = str(AreYouSure.get())
 
                 if YNanswer == "y":
-                    ifAnswerIsY()
-                    
+                    ifAnswerIsY() 
                 elif YNanswer == "n":
                     HeckingInterrupted = Label(terminalApp, font=("Terminal", 10), bg="black", fg="white", borderwidth=0, text=('Hecking interrupted.'))
                     HeckingInterrupted.place(x=1, y=140)
-
                 else:
                     pass #- vamo ćem nešto stait
     
@@ -69,10 +62,6 @@ def dakako():
             AreYouSure.bind("<Return>", jebiSebe)
             AreYouSure.focus_set()
             
-
-
-
-
         elif usersCommand == "cls":
             blackBg()
             entryCommands.delete(0, END)
