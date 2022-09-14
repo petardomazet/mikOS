@@ -21,7 +21,7 @@ import platform
 import cpuinfo
 import shutil
 
-
+# nešto sam slučajno zaje*.. pa sam pisa na stari file pa zato nisu znakovi jednakosti poredani dobro na iduće 4 linije
 window_dimensions = "1100x620"
 os_name = "mikOS"
 mikOS_version = "1.0"
