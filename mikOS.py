@@ -1,15 +1,10 @@
 '''
-@pdmzt  &  @notjipp
+@pdmzt
 Simple Python Operating System
 mikOS
 June 2022
-'''
 
-'''
-1 - shutdown ikonu implementirat i stavit ikonicu shutdownIcon.png
-2 - uredit da se klikom na sleepMode (crni ekran) button ugasi, ne samo any key-em
-
-
+Project currently abandoned.
 '''
 
 
@@ -21,7 +16,6 @@ import platform
 import cpuinfo
 import shutil
 
-# nešto sam slučajno zaje*.. pa sam pisa na stari file pa zato nisu znakovi jednakosti poredani dobro na iduće 4 linije
 window_dimensions = "1100x620"
 os_name = "mikOS"
 mikOS_version = "1.0"
